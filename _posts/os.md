@@ -1,0 +1,29 @@
+---
+layout: post
+title: Operating System là gì?
+description: Trước khi bắt đầu về hệ điều hành Linux có lẽ chúng ta cần hiểu một chút cơ bản của OS(Operating System) là gì?
+image: assets/images/os1.jpg
+---
+
+## Operating System là gì?
+Có thể hiểu cơ bản khi bạn sử dụng máy tính, điện thoại,... Những vật dụng này cơ bản sẽ có 4 thành phần chính trong phần cứng:
+- CPU: Bộ xử lý trung tâm, nơi xử lý các tác vụ của máy tính.
+- RAM: Bộ nhớ truy cập ngẫu nhiên, nơi lưu trữ các tác vụ đang được thực hiện.
+- Ổ cứng: Nơi lưu trữ dữ liệu lâu dài.
+- I/O devies: Là những thiết bị đầu vào như chuột, bàn phím, ...
+Và Khi sử dụng các phần mềm (application): thì các phần mềm này sẽ sử dụng tài nguyên của phần cứng, chẳng hạn như hình vẽ ở đây, khi ta sử dụng Chrome application. Ứng dụng sẽ sử dụng phần ram, và cpu. khi ta click chuột vào Chrome tức là đang sử dụng I/O devies. Và khi ta lưu trữ dữ liệu vào ổ cứng thì cũng là sử dụng phần cứng.
+![OS](/assets/images/os1.jpg)
+
+Tuy nhiên, vấn đề ở đây chẳng hạn ta sử dụng nhiều app thì sẽ trong như thế nào? 
+![OS](/assets/images/os2.png)
+Có phải nhìn sẽ rất bối rối, và hệ điều hành sẽ confuse không biết sử dụng cái nào. Bởi vì, tất cả các application cần implement hết tất cả các phần cứng.
+
+Và để khắc phục được vấn đề trên: 
+Hệ điều hành sinh ra và như là mối quan hệ win-win với phần cứng và phần mềm. Hệ điều hành sẽ quản lý tài nguyên phần cứng và cung cấp các dịch vụ cho các ứng dụng. Và hệ điều hành sẽ quản lý các ứng dụng, và cung cấp các dịch vụ cho phần cứng.
+
+![OS](/assets/images/os3.png)
+
+Khi app nào muốn sử dụng tài nguyên nào thì có thể nói chuyện trực tiếp với OS, và OS sẽ sử dụng tài nguyên đó cho app đó.
+Tóm lại có thể hiểu cơ bản OS là: 
+1. Một translator
+2. Manager Resource
